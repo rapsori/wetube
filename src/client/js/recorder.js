@@ -5,10 +5,10 @@ let stream;
 let recorder;
 let videoFile;
 
-const handleDownload = () => {
+const handleDownload = async () => {
   const a = document.createElement("a");
   a.href = videoFile;
-  a.download = "MyRecording.mp4";
+  a.download = "MyRecording";
   document.body.appendChild(a);
   a.click();
 };
